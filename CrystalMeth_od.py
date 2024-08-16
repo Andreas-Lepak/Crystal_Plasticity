@@ -1,34 +1,12 @@
 from tkinter import CENTER
 from turtle import width
 from manim import *
-# from manim.opengl import *
-#from manim_slides import Slide
-# from manim_meshes import *
-# from moderngl import *
-# import cv2
 import os, sys, subprocess, time, shutil
-# import math
 from manim.mobject.svg.svg_mobject import SVGMobject
 import numpy as np
 
-# Render slides:
-# manim potato.py --disable_caching -pqh --fps=30
-# Play slides
-# manim-slides HuHu_reg --start-paused -r 1280 720
-# Convert slides to HTML
-# manim-slides convert HuHu_reg --open HTML_slides_v2
-
-# Convert slides to pptx
-# manim-slides convert --to=pptx HuHu_reg pptx_slides.pptx
-
-# Configure keys for slides
-# manim-slides wizard
-
-# Render with opengl
-# manim -qm -p --renderer=opengl test_manim.py HuHu_reg
-
 # Render with setting from config files (remoe flags which overwrite properties)
-# manim potato.py --disable_caching -p
+# manim CrystalMeth_od.py --disable_caching -p
 
 class CrystalMeth_od_Scene(Scene):
 
@@ -38,7 +16,7 @@ class CrystalMeth_od_Scene(Scene):
 
         Mobject.set_default(color=BLACK)
 
-        # Add stuff to Latex preamble
+        # Add stuff to Latex preamble to use Latex fonts etc.
         self.myTemplate = TexTemplate()
         self.myTemplate.add_to_preamble(r"\usepackage[scaled]{helvet}")
         self.myTemplate.add_to_preamble(r"\renewcommand\familydefault{\sfdefault} ")
@@ -56,7 +34,6 @@ class CrystalMeth_od_Scene(Scene):
             \draw[black,fill=black] (0,1.2ex) circle (.1ex) }%  
             }""")       
         self.myTemplate.add_to_preamble(r"\usepackage[T1]{fontenc}")
- 
         
         # Fontsizes
         self.font_size_title = 60
@@ -78,14 +55,6 @@ class CrystalMeth_od_Scene(Scene):
         vr_1 = SVGMobject("Material/crystal_plast_def0.svg").scale(vr_scale)
         vr_2 = SVGMobject("Material/crystal_plast_def_plast.svg").scale(vr_scale)
         vr_3 = SVGMobject("Material/crystal_plast_def_plast_left.svg").scale(vr_scale)
-
-        # vr_1.set_opacity(1.)
-        # vr_2.set_opacity(1.)
-        # vr_1[0].set_fill_color(WHITE)
-        # vr_2[0].set_fill_color(WHITE)
-
-        # vr_1.set_stroke(width=4,color=BLACK)
-        # vr_2.set_stroke(width=4,color=BLACK)
 
         vr_1.remove(vr_1[-1],vr_1[-2]).set_stroke(width=2,color=BLACK)
         vr_2.remove(vr_2[-1],vr_2[-2]).set_stroke(width=2,color=BLACK)
@@ -143,8 +112,6 @@ class CrystalMeth_od_Scene(Scene):
         self.play(ReplacementTransform(vr_3,vr_1cc))
         self.wait(1)
 
-
-
         ## Fade out everything
         # self.play(
         #     *[FadeOut(mob)for mob in self.mobjects]
@@ -152,13 +119,6 @@ class CrystalMeth_od_Scene(Scene):
         # )
 
         
-# Cpoy output to the directory where manim-sideview can find it
-filename = 'GaussLobatto.mp4'
 
-# resultspath_old = './media/videos/HuHu_reg/480p15'
-# resultspath_new = './media/videos/potato/1080p60'
-# if os.path.exists(resultspath_old+'/'+filename):
-#     if not os.path.exists(resultspath_new): os.makedirs(resultspath_new)
-#     shutil.copy(resultspath_old+'/'+filename,resultspath_new+'/'+filename)
 
 
