@@ -1,33 +1,10 @@
 from manim import *
-# from manim.opengl import *
-#from manim_slides import Slide
-# from manim_meshes import *
-# from moderngl import *
-# import cv2
 import os, sys, subprocess, time, shutil
-# import math
 import numpy as np
 
-# Render slides:
-# manim potato.py --disable_caching -pqh --fps=30
-# Play slides
-# manim-slides SquareToCircle --start-paused -r 1280 720
-# Convert slides to HTML
-# manim-slides convert SquareToCircle --open HTML_slides_v2
-
-# Convert slides to pptx
-# manim-slides convert --to=pptx SquareToCircle pptx_slides.pptx
-
-# Configure keys for slides
-# manim-slides wizard
-
-# Render with opengl
-# manim -qm -p --renderer=opengl test_manim.py SquareToCircle
-
-# Render with setting from config files (remoe flags which overwrite properties)
+# Render with setting from config files (remove flags which overwrite properties)
 # manim potato.py --disable_caching -p
 
-#class SquareToCircle(Slide):
 class SquareToCircle(Scene):
     def construct(self):
 
@@ -87,14 +64,3 @@ class SquareToCircle(Scene):
         #     *[FadeOut(mob)for mob in self.mobjects]
         #     # All mobjects in the screen are saved in self.mobjects
         # )
-
-        
-# Cpoy output to the directory where manim-sideview can find it
-filename = 'SquareToCircle.mp4'
-resultspath_old = './media/videos/potato/480p15'
-# resultspath_new = './media/videos/potato/1080p60'
-# if os.path.exists(resultspath_old+'/'+filename):
-#     if not os.path.exists(resultspath_new): os.makedirs(resultspath_new)
-#     shutil.copy(resultspath_old+'/'+filename,resultspath_new+'/'+filename)
-
-
