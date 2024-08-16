@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="hatch_short.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-global="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-others="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-page="true"
+     inkscape:snap-center="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:zoom="3.1108586"
+     inkscape:cx="392.97833"
+     inkscape:cy="305.86411"
+     inkscape:window-width="3840"
+     inkscape:window-height="2123"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#00aa00;stroke-width:1.6;paint-order:markers fill stroke"
+       d="M 84.728273,79.201052 107.14767,56.781663"
+       id="path857" />
+    <path
+       style="fill:none;stroke:#00aa00;stroke-width:1.6;paint-order:markers fill stroke"
+       d="M 84.728284,102.75181 107.14767,80.332423"
+       id="path941" />
+    <path
+       style="fill:none;stroke:#00aa00;stroke-width:1.6;paint-order:markers fill stroke"
+       d="M 84.728284,126.30257 107.14767,103.88318"
+       id="path943" />
+    <path
+       style="fill:none;stroke:#00aa00;stroke-width:1.6;paint-order:markers fill stroke"
+       d="m 84.728284,55.650292 22.419386,-22.41939 0,93.834118"
+       id="path949"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>
